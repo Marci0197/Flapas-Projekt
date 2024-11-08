@@ -1,0 +1,19 @@
+Hauptfach:
+
+Mathematik:
+INSERT INTO `fächer` (`ID`, `name`, `kategorie`) VALUES ('1', 'Mathematik', 'Hauptfach');
+Englisch:
+INSERT INTO `fächer` (`ID`, `name`, `kategorie`) VALUES ('2', 'Englisch', 'Hauptfach');
+Deutsch:
+INSERT INTO `fächer` (`ID`, `name`, `kategorie`) VALUES ('3', 'Deutsch', 'Hauptfach');
+Physik, BWR, französisch
+
+
+Nebenfach:
+
+Informatik:
+Geschichte:
+Chemie:
+Wirtschaft und Recht:
+Geografie:
+Biologie:

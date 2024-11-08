@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       if (index === 0) {
-        document.getElementById("myHtml").src = "/iframes/dashboard.html";
+        document.getElementById("myHtml").src = "../iframes/dashboard.html";
       } else if (index === 1) {
-        document.getElementById("myHtml").src = "/iframes/scoreboard.html";
+        document.getElementById("myHtml").src = "../iframes/scoreboard.html";
       } else if (index === 2) {
-        document.getElementById("myHtml").src = "/iframes/profil.html";
+        document.getElementById("myHtml").src = "../iframes/profil.html";
       }
     });
   });

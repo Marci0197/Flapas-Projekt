@@ -1,50 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLAPAS-Projekt</title>
-    <link rel="stylesheet" href="/login/style.css" />
-  </head>
-  <body>
-    <section class="wrapper">
-      <div class="form signup">
-        <header>Registrieren</header>
-        <form action="#">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email Adresse" required />
-          <input type="password" placeholder="Passwort" required />
-          <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">Ich akzeptiere alle Bedingungen</label>
-          </div>
-          <input type="submit" value="Signup" />
+    <link rel="stylesheet" href="/login/style.css">
+</head>
+<body>
+    <div class="container login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="email" placeholder="Email eingeben" required>
+            <input type="password" placeholder="Passwort eingeben" required>
+
+            <button type="submit">Anmelden</button>
+            <a href="#" class="forgot-password">Passwort vergessen?</a>
+            <button type="button" class="create-account" onclick="showSignup()">Account erstellen</button>
         </form>
-      </div>
+    </div>
 
-      <div class="form login">
-        <header>Login</header>
-        <form action="#">
-          <input type="text" placeholder="Email Adresse" required />
-          <input type="password" placeholder="Passwort" required />
-          <a href="#">Passwort vergessen?</a>
-          <input type="submit" value="Login" />
+    <div class="container signup-container">
+        <h1>Registrieren</h1>
+        <form>
+            <input type="text" placeholder="Vorname" required>
+            <input type="text" placeholder="Nachname" required>
+            <input type="email" placeholder="Email eingeben" required>
+            <input type="password" placeholder="Passwort eingeben" required>
+
+            <button type="submit">Registrieren</button>
+            <button type="button" class="back-to-login" onclick="showLogin()">Zum Login</button>
         </form>
-      </div>
+    </div>
 
-      <script>
-        const wrapper = document.querySelector(".wrapper"),
-          signupHeader = document.querySelector(".signup header"),
-          loginHeader = document.querySelector(".login header");
-
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
-      </script>
-    </section>
-  </body>
+    <script src="/login/script.js"></script>
+</body>
 </html>
