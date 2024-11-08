@@ -24,14 +24,15 @@ h2{
 }
 
 .div-dashboard{
-    border: 3px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 8px;
-    max-width: 150px;
-    height: 50px;
-    box-shadow: 10px 5px 5px #000000;
-
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
@@ -44,29 +45,32 @@ h2{
     align-items: center;
     text-align: center;
 }
-/*
-  TODO: Scoreboard schöner machen
-*/
+
 .div-scoreboard-top{
-    border: 3px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 7px;
-    height: 50px;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
 
     margin-top: 35px;
+    margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
 .div-scoreboard{
-    border: 3px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 7px;
-    height: 40px;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
 
-    margin-top: -3px;
+    margin-top: -1px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -96,17 +100,17 @@ li{
 a{
     text-decoration: none;
     color: #000000;
+    font-weight: bold;
+    font-size: large;
 }
-/*
-  TODO: height Responsive machen, dass es nicht auf 750px festgelegt ist
-*/
+
 .div-profil{
-    border: 3px;
-    border-style: solid;
-    border-color: #000000;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
     border-radius: 20px;
-    height: 750px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
 
     margin-top: 40px;
     margin-right: 20px;
@@ -121,6 +125,7 @@ h1{
 p{
     color: #000000;
     font-weight: bold;
+    font-size: large;
 
     margin-left: 20px;
 }
