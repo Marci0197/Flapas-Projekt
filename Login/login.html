@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyZone</title>
+    <link rel="stylesheet" href="/login/style.css">
+</head>
+<body>
+    <div class="container login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="email" placeholder="Email eingeben" required>
+            <input type="password" placeholder="Passwort eingeben" required>
+
+            <button type="submit">Anmelden</button>
+            <a href="#" class="forgot-password">Passwort vergessen?</a>
+            <button type="button" class="create-account" onclick="showSignup()">Account erstellen</button>
+        </form>
+    </div>
+
+    <div class="container signup-container">
+        <h1>Registrieren</h1>
+        <form>
+            <input type="text" placeholder="Vorname" required>
+            <input type="text" placeholder="Nachname" required>
+            <input type="email" placeholder="Email eingeben" required>
+            <input type="password" placeholder="Passwort eingeben" required>
+
+            <button type="submit">Registrieren</button>
+            <button type="button" class="back-to-login" onclick="showLogin()">Zum Login</button>
+        </form>
+    </div>
+
+    <script src="/login/script.js"></script>
+</body>
+</html>
