@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (){
   document.querySelectorAll(".footer a").forEach((link, index) => {
-    link.addEventListener("click", function (event) {
+    link.addEventListener("click", function (event){
       event.preventDefault();
 
       if (index === 0) {
