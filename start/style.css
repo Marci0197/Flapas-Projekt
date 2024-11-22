@@ -203,6 +203,27 @@ footer a{
     background-color: #0e4bf1;
 }
 
+.download{
+    position: relative;
+    height: 87.5vh;
+}
+
+.download h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-container{
+    padding-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.download-container a{
+    text-decoration: none;
+    color: #000000;
+}
+
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
