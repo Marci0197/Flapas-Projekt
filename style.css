@@ -2,102 +2,77 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     background: #e4e9f7;
-    height: 90dvh;
-}
-
-.wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+    flex-direction: column;
+    max-height: 100vh;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.footer-container{
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    padding: 10px;
-}
-
-.box{
+.header{
     background: #fdfdfd;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 100px;
+    padding: 5px 10px;
+    margin-top: 1px;
     border-radius: 20px;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
                 0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
-.form-box{
-    width: 450px;
-    margin: 0px 10px;
-}
-
-.form-box header{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.form-box footer{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-main{
-    flex-grow: 1;
-    padding-top: 80px;
-    padding-bottom: 80px;
+.content{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .footer{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    padding: 5px 10px;
+    margin-bottom: 1px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+ul{
     display: flex;
     justify-content: center;
     list-style: none;
-    width: 100%;
+    width: 97%;
 }
 
-.footer li{
+li{
     flex-grow: 1;
     text-align: center;
 }
 
-.footer a{
+a{
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    font-size: large;
-}
-
-h3{
-    font-weight: bold;
-    color: #000000;
+    font-size: medium;
 }
 
 iframe{
-    position: absolute;
+    width: 100%;
+    height: calc(100vh - 150px);
     border: none;
-    top: 70px;
-    left: 20px;
-    right: 20px;
-    bottom: 70px;
-    width: calc(100% - 40px);
-    height: calc(100% - 140px);
-    min-height: 300px;
+    border-radius: 10px;
 }
 
-p{
-    color: #000000;
-    font-weight: bold;
-    font-size: large;
+@media(max-width: 600px){
+    .header h2{
+        font-size: 20px;
+    }
+
+    .footer li{
+        display: block;
+        margin: 5px 0;
+    }
 }
