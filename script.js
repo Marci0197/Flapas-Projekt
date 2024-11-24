@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const iframeContainer = document.getElementById('iframeContainer');
   const myHtml = document.getElementById("myHtml");
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-  // Überprüfen, ob es sich um ein Handy handelt
+  // Überprüfen, ob es sich um ein mobiles Gerät handelt
   const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
-  // Setze den iframe basierend auf dem Gerätetyp
+  // Setze den iFrame-Quell basierend auf dem Gerätetyp
   if (isMobile) {
       myHtml.src = "/iframes-handy/dashboard.html"; // Mobile iFrame
   } else {
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.addEventListener("click", function (event) {
           event.preventDefault();
 
-          // Ändere den iframe basierend auf dem Link
+          // Ändere den iFrame-Quell basierend auf dem Link
           if (index === 0) {
               myHtml.src = isMobile ? "/iframes-handy/dashboard.html" : "/iframes/dashboard.html";
           } else if (index === 1) {
