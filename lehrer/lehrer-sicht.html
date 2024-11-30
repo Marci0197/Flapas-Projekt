@@ -7,29 +7,23 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="header-container">
-        <div class="box form-box">
-            <header>StudyZone - Lehrer</header>
-        </div>
+    <div class="header">
+        <h2>StudyZone - Lehrer</h2>
     </div>
 
-    <main id="content">
+    <div class="content" id="iframeContainer">
         <!-- Hier der Link  ↓   für die Startseite -->
-        <iframe src="/lehrer/iframes/dashboard.html" id="myHtml"></iframe>
-    </main>
-
-    <div class="wrapper">
-        <div class="footer-container">
-            <div class="box form-box">
-                <ul class="footer">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Erstellen</a></li>
-                    <li><a href="#">Profil</a></li>
-                </ul>
-            </div>
-        </div> 
+        <iframe id="myHtml"></iframe>
     </div>
-    
+
+    <div class="footer">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Erstellen</a></li>
+            <li><a href="#">Profil</a></li>
+        </ul>
+    </div>
+
     <script src="lehrer.js"></script>
 </body>
 </html>
