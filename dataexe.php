@@ -17,19 +17,9 @@ if (mysqli_connect_errno()) {
     $sql = "SELECT * FROM `Benutzer`";
     $result = mysqli_query($conn, $sql);
 
-    // Überprüfung, ob die Abfrage erfolgreich war
-    if (!$result) {
-        echo "Error in query: " . mysqli_error($conn);
-    } else {
-        // Prüfen, ob Datensätze vorhanden sind
-        if (mysqli_num_rows($result) > 0) {
-            // Ergebnisse durchlaufen und anzeigen
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "ID: " . $row['id'] . " - Name: " . $row['name'] . "<br>";
-            }
-        } else {
-            echo "No records found in the table.";
-        }
+    // Ergebnisse durchlaufen und anzeigen
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "ID: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
     }
 }
 
