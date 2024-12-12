@@ -1,4 +1,3 @@
-<?php
 $username="marcel"; // your lower privileged userid
 $password="MM-06102009-mm"; //your password for your lower privileged user
 $database="studyzone";  //your database
@@ -25,4 +24,3 @@ while ($row = mysqli_fetch_array($result))
         print "Time: $row[0] temp: $row[1] pressure: $row[2] humidity: $row[3]\n";
 }
 */
-?>
