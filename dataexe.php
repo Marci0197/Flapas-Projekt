@@ -11,7 +11,7 @@ if (mysqli_connect_errno()){
     echo "Connected to database";
     $sql = SELECT * FROM `Benutzer`;
     $result = mysqli_query($conn, $sql);
-    echo "result" + $result;
+    echo "result" . $result;
 }
 
 
