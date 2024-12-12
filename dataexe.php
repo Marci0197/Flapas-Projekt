@@ -1,5 +1,4 @@
 <?php
-
 $username="marcel"; // your lower privileged userid
 $password="MM-06102009-mm"; //your password for your lower privileged user
 $database="studyzone";  //your database
@@ -10,7 +9,7 @@ if (mysqli_connect_errno()){
         exit();
 }else{
     echo "Connected to database";
-    $sql = "SELECT `ID`, `Passwort` FROM `Benutzer`;";
+    $sql = "SELECT * FROM 'Benutzer';";
     $result = mysqli_query($conn, $sql);
     echo "result" + $result;
 }
