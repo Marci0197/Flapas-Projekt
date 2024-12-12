@@ -4,7 +4,8 @@ $password = "MM-06102009-mm"; // your password for your lower privileged user
 $database = "studyzone";  // your database
 
 // Verbindung zur Datenbank herstellen
-$conn = mysqli_connect("localhost", $username, $password, $database);
+$conn = mysqli_connect("localhost", $username, 
+$password, $database);
 
 // Überprüfung, ob die Verbindung erfolgreich war
 if (mysqli_connect_errno()) {
