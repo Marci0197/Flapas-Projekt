@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (index === 0) {
               myHtml.src = isMobile ? "/iframes-handy/dashboard.html" : "/iframes/dashboard.html";
           } else if (index === 1) {
-              myHtml.src = isMobile ? "/iframes-handy/scoreboard.html" : "/iframes/scoreboard.html";
+              myHtml.src = isMobile ? "/iframes-handy/scoreboard.html" : "/iframes/scoreboard.php";
           } else if (index === 2) {
               myHtml.src = isMobile ? "/iframes-handy/profil.html" : "/iframes/profil.html";
           }
