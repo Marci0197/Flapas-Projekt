@@ -10,7 +10,7 @@ if (mysqli_connect_errno()){
         exit();
 }else{
     echo "Connected to database";
-    $sql = "SELECT ID, Name FROM Benutzer;";
+    $sql = "SELECT ID, Passwort FROM Benutzer;";
     $result = mysqli_query($conn, $sql);
     echo "result" + $result;
 }
