@@ -1,3 +1,7 @@
+<?php
+include 'dataexe.php';
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,8 +10,13 @@
     <link rel="stylesheet" href="/iframes/style.css">
 </head>
 <body>
+    <?php
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
+    }
+    ?>
     <div class="div-scoreboard-top">
-        <li><p>Position</p></li>
+        <li><p><?php $row['ID'] ?></p></li>
         <li><p>Name</p></li>
         <li><p>Zeit</p></li>
         <li><p>Punkte</p></li>
