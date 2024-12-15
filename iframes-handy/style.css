@@ -1,0 +1,131 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h2{
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.div-dashboard-hauptfächer{
+    width: 50%;
+    float: left;
+
+    margin-top: 10px;
+}
+
+.div-dashboard-nebenfächer{
+    width: 50%;
+    float: right;
+
+    margin-top: 10px;
+}
+
+.div-dashboard{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.div-dashboard, li{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-scoreboard-top{
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
+
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.div-scoreboard{
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
+
+    margin-top: -1px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.div-scoreboard-top, li{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-scoreboard, li{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+}
+
+.div-profil{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
+
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1{
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+p{
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+
+    margin-left: 20px;
+}

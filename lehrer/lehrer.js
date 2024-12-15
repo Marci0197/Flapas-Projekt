@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Setze den iFrame-Quell basierend auf dem Gerätetyp
   if (isMobile) {
-      myHtml.src = "/iframes-handy/dashboard.php"; // Mobile iFrame
+      myHtml.src = "/lehrer/iframes-handy/dashboard.php"; // Mobile iFrame
   } else {
-      myHtml.src = "/iframes/dashboard.php"; // Desktop iFrame
+      myHtml.src = "/lehrer/iframes/dashboard.php"; // Desktop iFrame
   }
 
   // Event-Listener für die Links im Footer
@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Ändere den iFrame-Quell basierend auf dem Link
           if (index === 0) {
-              myHtml.src = isMobile ? "/iframes-handy/dashboard.php" : "/iframes/dashboard.php";
+              myHtml.src = isMobile ? "/lehrer/iframes-handy/dashboard.php" : "/lehrer/iframes/dashboard.php";
           } else if (index === 1) {
-              myHtml.src = isMobile ? "/iframes-handy/scoreboard.php" : "/iframes/scoreboard.php";
+              myHtml.src = isMobile ? "/lehrer/iframes-handy/erstellen.php" : "/lehrer/iframes/erstellen.php";
           } else if (index === 2) {
-              myHtml.src = isMobile ? "/iframes-handy/profil.php" : "/iframes/profil.php";
+              myHtml.src = isMobile ? "/lehrer/iframes-handy/profil.php" : "/lehrer/iframes/profil.php";
           }
       });
   });
