@@ -31,6 +31,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="loading.js"></script>
 </body>
 </html>
