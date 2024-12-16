@@ -1,7 +1,9 @@
 <?php
 include("dataexe.php");
+while($row = mysqli_fetch_assoc($result)){
+    echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -16,11 +18,6 @@ include("dataexe.php");
         <h2>StudyZone - Schüler</h2>
     </div>
 
-    <?php
-    while ($row = mysqli_fetch_assoc($result)){
-        echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
-    }
-    ?>
     <div class="div-scoreboard-top">
         <li><p><?php $row['ID'] ?></p></li>
         <li><p>Name</p></li>
