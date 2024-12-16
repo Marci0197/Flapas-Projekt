@@ -7,11 +7,16 @@ include 'dataexe.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyZone</title>
     <link rel="stylesheet" href="/iframes/style.css">
 </head>
 <body>
+    <div class="header">
+        <h2>StudyZone - Schüler</h2>
+    </div>
+
     <?php
-    while ($row = mysqli_fetch_assoc($result)) {
+    while ($row = mysqli_fetch_assoc($result)){
         echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
     }
     ?>
@@ -56,5 +61,16 @@ include 'dataexe.php';
         Es soll wie ein Pop Up rauskommen
         Mann kann aber beim Scoreboard auch noch nach unten scrollen
     -->
+
+    <div class="footer">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Scoreboard</a></li>
+            <li><a href="#">Profil</a></li>
+        </ul>
+    </div>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
