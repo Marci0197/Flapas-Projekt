@@ -1,8 +1,8 @@
-<!DOCTYPE html>
 <?php
 include 'dataexe.php';
 ?>
 
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
