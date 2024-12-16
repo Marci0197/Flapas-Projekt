@@ -18,19 +18,19 @@ include("dataexe.php");
         <h2>Hauptfächer</h2>
 
         <div class="div-dashboard">
-            <li><a href="#">Mathe</a></li>
+            <li class="li-dashboard"><a href="#">Mathe</a></li>
         </div>
     
         <div class="div-dashboard">
-            <li><a href="#">Deutsch</a></li>
+            <li class="li-dashboard"><a href="#">Deutsch</a></li>
         </div>
 
         <div class="div-dashboard">
-            <li><a href="#">Englisch</a></li>
+            <li class="li-dashboard"><a href="#">Englisch</a></li>
         </div>
 
         <div class="div-dashboard">
-            <li><a href="#">Physik</a></li>
+            <li class="li-dashboard"><a href="#">Physik</a></li>
         </div>
     </div>
     
@@ -38,11 +38,11 @@ include("dataexe.php");
         <h2>Nebenfächer</h2>
 
         <div class="div-dashboard">
-            <li><a href="#">IT</a></li>
+            <li class="li-dashboard"><a href="#">IT</a></li>
         </div>
 
         <div class="div-dashboard">
-            <li><a href="#">Chemie</a></li>
+            <li class="li-dashboard"><a href="#">Chemie</a></li>
         </div>
     </div>
 
