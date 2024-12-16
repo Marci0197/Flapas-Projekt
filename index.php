@@ -18,12 +18,10 @@
 
     <div class="footer">
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Scoreboard</a></li>
-            <li><a href="#">Profil</a></li>
+            <li><a href="/iframes/dashboard.php">Dashboard</a></li>
+            <li><a href="/iframes/scoreboard.php">Scoreboard</a></li>
+            <li><a href="/iframes/profil.php">Profil</a></li>
         </ul>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
