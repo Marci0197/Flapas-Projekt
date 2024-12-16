@@ -1,13 +1,11 @@
-<?php
-include("dataexe.php");
-?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyZone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/iframes/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="header">
@@ -48,10 +46,13 @@ include("dataexe.php");
 
     <div class="footer">
         <ul>
-            <li><a href="/iframes/dashboard.php">Dashboard</a></li>
-            <li><a href="/iframes/scoreboard.php">Scoreboard</a></li>
-            <li><a href="/iframes/profil.php">Profil</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Scoreboard</a></li>
+            <li><a href="#">Profil</a></li>
         </ul>
     </div>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
