@@ -1,3 +1,6 @@
+<?php
+include("dataexe.php");
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
