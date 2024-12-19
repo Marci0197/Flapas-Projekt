@@ -1,3 +1,7 @@
+<?php
+include("php/dataexe.php");
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -8,6 +12,12 @@
     <link rel="stylesheet" href="/css/schueler.css">
 </head>
 <body>
+    <?php
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
+    }
+    ?>
+
     <div class="header">
         <h1>StudyZone - Schüler</h>
     </div>
