@@ -1,3 +1,7 @@
+<?php
+include("php/dataexe.php");
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,6 +13,12 @@
 </head>
 <body>
     <!-- Das ist Normalerweise die App für den Schüler -->
+
+    <?php
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "Position: " . $row['ID'] . " - Name: " . $row['Name'] . "<br>";
+    }
+    ?>
 
     <div class="header">
         <h1>StudyZone - Schüler</h>
