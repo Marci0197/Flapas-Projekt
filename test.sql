@@ -1,9 +1,9 @@
 CREATE TABLE student (
     id INT PRIMARY KEY,
-    name VARCHAR(100),
+    Na_Ne VARCHAR(100),
     klasse VARCHAR(50)
 );
 
-INSERT INTO student (id, name, klasse) VALUES (1, 'Max Mustermann', '10A');
+INSERT INTO student (id, Na_Ne, klasse) VALUES (1, 'Max Mustermann', '10A');
 
 SELECT * FROM student;
