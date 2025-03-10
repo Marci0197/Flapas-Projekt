@@ -44,7 +44,7 @@
             
             ?>
             <header>Login</header>
-            <form action="../schueler/index.php" method="post">
+            <form action="../login/procedure.php" method="post">
                 <div class="field input">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" autocomplete="off" placeholder="Email eingeben" required>
