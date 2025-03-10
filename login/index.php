@@ -14,7 +14,7 @@
       <div class="container">
         <div class="box form-box">
             <?php
-             
+             /*
               include("../php/config.php");
               
               if(isset($_POST['submit'])){
@@ -40,8 +40,7 @@
                     header("Location: /schueler/index.php");
                 }
               }else{
-
-            
+            */
             ?>
             <header>Login</header>
             <form action="../login/procedure.php" method="post">
