@@ -13,45 +13,47 @@
     </div>
 
     <div class="content">
-        <div class="list-top">
-            <li><p>Fach</p></li>
-            <li><p>Frage</p></li>
-            <li><p>Lösung</p></li>
-            <li><p>Bearbeitet</p></li> <!-- Von wie vielen Schülern es schon bearbeitet wurde -->
-            <li><p>Klasse</p></li> <!-- Von welcher Klasse es ist -->
-        </div>
-
-        <div class="list">
-            <li><p>Mathematik</p></li>
-            <li><p>Welche Parabel?</p></li>
-            <li><p>Nein</p></li>
-            <li><p>5/23</p></li>
-            <li><p>9b</p></li>
-        </div>
-
-        <div class="list">
-            <li><p>Englisch</p></li>
-            <li><p>Bearbeite die If-Clause</p></li>
-            <li><p>if ... will go ...</p></li>
-            <li><p>15/23</p></li>
-            <li><p>9b</p></li>
-        </div>
-
-        <div class="list">
-            <li><p>Informatik</p></li>
-            <li><p>Binär?</p></li>
-            <li><p>011100</p></li>
-            <li><p>23/32</p></li>
-            <li><p>8a</p></li>
-        </div>
-
-        <div class="list">
-            <li><p>Deutsch</p></li>
-            <li><p>TGA schreiben</p></li>
-            <li><p>Datei hochladen</p></li>
-            <li><p>0/26</p></li>
-            <li><p>8d</p></li>
-        </div>
+        <table class="scoreboard">
+            <thead>
+                <tr>
+                    <th>Fach</th>
+                    <th>Frage</th>
+                    <th>Lösung</th>
+                    <th>Bearbeitet</th> <!-- Von wie vielen Schülern es schon bearbeitet wurde -->
+                    <th>Klasse</th> <!-- Von welcher Klasse es ist -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mathematik</td>
+                    <td>Welche Parabel?</td>
+                    <td>Nein</td>
+                    <td>5/23</td>
+                    <td>9b</td>
+                </tr>
+                <tr>
+                    <td>Englisch</td>
+                    <td>Bearbeite die if-Clause</td>
+                    <td>if ... will go ...</td>
+                    <td>15/23</td>
+                    <td>9b</td>
+                </tr>
+                <tr>
+                    <td>Informatik</td>
+                    <td>Binär?</td>
+                    <td>011100</td>
+                    <td>23/32</td>
+                    <td>8a</td>
+                </tr>
+                <tr>
+                    <td>Deutsch</td>
+                    <td>TGA schreiben</td>
+                    <td>Datei hochladen</td>
+                    <td>0/26</td>
+                    <td>8d</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="footer">

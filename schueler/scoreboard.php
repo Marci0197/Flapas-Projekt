@@ -13,47 +13,48 @@
     </div>
 
     <div class="content">
-        <div class="scoreboard-top">
-            <li><p>Position</p></li>
-            <li><p>Name</p></li>
-            <li><p>Zeit</p></li>
-            <li><p>Punkte</p></li>
-        </div>
-
-        <div class="scoreboard">
-            <li><p>1.</p></li>
-            <li><p>Max Mustermann</p></li>
-            <li><p>1:20 Min.</p></li>
-            <li><p>20</p></li>
-        </div>
-
-        <div class="scoreboard">
-            <li><p>2.</p></li>
-            <li><p>Max Mustermann 2</p></li>
-            <li><p>1:30 Min.</p></li>
-            <li><p>18</p></li>
-        </div>
-        
-        <div class="scoreboard">
-            <li><p>3.</p></li>
-            <li><p>Max Mustermann 4</p></li>
-            <li><p>1:40 Min.</p></li>
-            <li><p>17</p></li>
-        </div>
-
-        <div class="scoreboard">
-            <li><p>4.</p></li>
-            <li><p>Max Mustermann 4</p></li>
-            <li><p>1:42 Min.</p></li>
-            <li><p>17</p></li>
-        </div>
-
-        <div class="scoreboard">
-            <li><p>5.</p></li>
-            <li><p>Max Mustermann 5</p></li>
-            <li><p>1:10 Min.</p></li>
-            <li><p>16</p></li>
-        </div>
+        <table class="scoreboard">
+            <thead>
+                <tr>
+                    <th>Platz</th>
+                    <th>Name</th>
+                    <th>Zeit</th>
+                    <th>Punkte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1.</th>  
+                    <td>Max Mustermann</td>  
+                    <td>1:20 Min.</td>  
+                    <td>20</td>  
+                </tr>
+                <tr>
+                    <th>2.</th>  
+                    <td>Max Mustermann 2</td>  
+                    <td>1:30 Min.</td>  
+                    <td>18</td>  
+                </tr>
+                <tr>
+                    <th>3.</th>  
+                    <td>Max Mustermann 3</td>  
+                    <td>1:40 Min.</td>  
+                    <td>17</td>  
+                </tr>
+                <tr>
+                    <th>4.</th>  
+                    <td>Max Mustermann 4</td>  
+                    <td>1:42 Min.</td>  
+                    <td>17</td>  
+                </tr>
+                <tr>
+                    <th>5.</th>  
+                    <td>Max Mustermann 5</td>  
+                    <td>1:10 Min.</td>  
+                    <td>16</td>  
+                </tr>
+            </tbody>
+        </table> 
     </div>
 
     <div class="footer">

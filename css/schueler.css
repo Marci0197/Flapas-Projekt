@@ -1,3 +1,7 @@
+body{
+    min-width: 400px;
+}
+
 .dashboard-hauptfächer{
     width: 50%;
     float: left;
@@ -31,24 +35,21 @@
     text-align: center;
 }
 
-.scoreboard-top{
+.scoreboard{
     background: #fdfdfd;
-    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5;
     border-radius: 10px;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
     margin-top: 5px;
+    width: 100%;
+    display: table;
 }
 
-.scoreboard{
-    background: #fdfdfd;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 20px;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
-    margin-top: -1px;
+.scoreboard th, .scoreboard td{
+    padding: 10px;
+    text-align: center;
 }
 
 .profil{

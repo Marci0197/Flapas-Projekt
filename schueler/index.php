@@ -10,7 +10,6 @@
 <body>
     <div class="header">
         <h1>StudyZone - Schüler</h>
-        <div> <?php echo $_POST["email"] ?></div>
     </div>
 
     <div class="content">
