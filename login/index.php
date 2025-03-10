@@ -21,7 +21,7 @@
                 $email = mysqli_real_escape_string($con,$_POST['email']);
                 $password = mysqli_real_escape_string($con,$_POST['password']);
 
-                $result = mysqli_query($con,"SELECT * FROM 'Logins', 'Profile' WHERE hashedpw='$hashedpw' AND EMail='$EMail' ") or die("Select Error");
+                $result = mysqli_query($con,"SELECT * FROM 'Logins' WHERE hashedpw='$hashedpw' AND EMail='$EMail' ") or die("Select Error");
                 $row = mysqli_fetch_assoc($result);
 
                 if(is_array($row) && !empty($row)){
@@ -44,7 +44,7 @@
             
             ?>
             <header>Login</header>
-            <form action="" method="post">
+            <form action="../schueler/index.php" method="post">
                 <div class="field input">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" autocomplete="off" placeholder="Email eingeben" required>
