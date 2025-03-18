@@ -51,7 +51,7 @@
             <form action="../login/procedure.php" method="post">
                 <div class="field input">
                     <label for="email_form">Email</label>
-                    <input type="text" name="email_form" id="email_form" autocomplete="off" required>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
                 </div>
 
                 <div class="field input">
@@ -64,7 +64,7 @@
                     <input type="submit" class="btn" name="submit" value="Login" required>
                 </div>
                 <div class="links">
-                    Don't have account? <a href="register.php">Sign Up Now</a>
+                    Don't have account? <a href="registrieren.php">Registrieren</a>
                 </div>
             </form>
         </div>
