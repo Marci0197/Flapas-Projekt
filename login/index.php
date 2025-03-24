@@ -1,5 +1,6 @@
 <?php 
-   session_start();
+    session_start();
+    ob_start(); // Ausgabe-Pufferung starten
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -7,68 +8,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>StudyZone</title>
 </head>
 <body>
       <div class="container">
         <div class="box form-box">
-            <?php
-             /*
+            <?php 
+             
               include("../php/config.php");
-
               if(isset($_POST['submit'])){
-                $email = mysqli_real_escape_string($con,$_POST['email_form']);
-                $password = mysqli_real_escape_string($con,$_POST['password']);
+                $email = mysqli_real_escape_string($con, $_POST['email']);
+                $password = $_POST['password'];
 
+                // Benutzer aus der Datenbank abrufen
+                $result = mysqli_query($con, "SELECT * FROM Benutzer WHERE EMail='$email'") or die("Fehler aufgetreten - Datenbank Benutzer");
+                $row = mysqli_fetch_assoc($result);
+                $result = mysqli_query($con, "SELECT `Rolle_int` FROM `Profile` WHERE EMail='$email'") or die("Fehler aufgetreten - Datenbank Profile");
+                $row2 = mysqli_fetch_assoc($result);
                 
-                $result = mysqli_query($con,"SELECT * FROM Logins WHERE Email='$email' AND Password='$password' ") or die("Select Error");
-                $logins_row = mysqli_fetch_assoc($result);
-
-                $result = mysqli_query($con,"SELECT * FROM Profile WHERE Email='$email' AND Password='$password' ") or die("Select Error");
-                $profile_row = mysqli_fetch_assoc($result);
-
                 if(is_array($row) && !empty($row)){
-                    $_SESSION['valid'] = $row['Email'];
-                    $_SESSION['username'] = $row['Username'];
-                    $_SESSION['age'] = $row['Age'];
-                    $_SESSION['id'] = $row['Id'];
-                }else{
-                    echo "<div class='message'>
-                      <p>Wrong Username or Password</p>
-                       </div> <br>";
-                   echo "<a href='index.php'><button class='btn'>Go Back</button>";
-         
-                }
-                if(isset($_SESSION['valid'])){
-                    header("Location: home.php");
-                }
-              }else{
+                    
+                    // Überprüfen des Passworts
+                    if(password_verify($password, $row['Passwort'])){
+                        // Login erfolgreich
+                        $_SESSION['valid'] = $row['EMail'];
+                        $_SESSION['name'] = $row['Name'];
 
-            */
+                        // Überprüfung ob es ein Lehrer ist
+                        $Rolle_int = $row2['Rolle_int'];
+                        if($row2["Rolle_int"] == 100){
+                            header("Location: ../lehrer/profil.php");
+                        } else{
+                            header("Location: ../schueler/profil.php");
+                        }
+                        exit;
+                    } else {
+                        // Falsches Passwort
+                        echo "<div class='message'>
+                                  <p>Falsche E-Mail oder Passwort</p>
+                              </div> <br>";
+                        echo "<a href='index.php'><button class='btn'>Zurück</button>";
+                    }
+                } else {
+                    // Benutzer nicht gefunden
+                    echo "<div class='message'>
+                              <p>Falsche E-Mail oder Passwort</p>
+                          </div> <br>";
+                    echo "<a href='index.php'><button class='btn'>Zurück</button>";
+                }
+              } else {
             ?>
             <header>Login</header>
-            <form action="../login/procedure.php" method="post">
+            <form action="" method="post">
                 <div class="field input">
-                    <label for="email_form">Email</label>
-                    <input type="email" name="email" id="email" autocomplete="off" required>
+                    <label for="email">E-Mail</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
                 </div>
 
                 <div class="field input">
-                    <label for="password">Password</label>
+                    <label for="password">Passwort</label>
                     <input type="password" name="password" id="password" autocomplete="off" required>
                 </div>
 
                 <div class="field">
-                    
                     <input type="submit" class="btn" name="submit" value="Login" required>
                 </div>
                 <div class="links">
-                    Don't have account? <a href="registrieren.php">Registrieren</a>
+                    TODO: E-Mail schreiben für vergessen und Registrieren
+                    Passwort vergessen? <a href="#">#</a>
+                </div>
+                <div class="links">
+                    Noch keinen Account? <a href="../login/registrieren.php">Registrieren</a>
                 </div>
             </form>
         </div>
-        <?php # } ?>
+        <?php } ?>
       </div>
 </body>
 </html>
