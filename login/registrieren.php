@@ -22,6 +22,14 @@ session_start();
             $email = $_POST['email'];
             $password = $_POST['password'];
 
+            $kennung = $_POST['kennung'];
+            if($kennung == "Lehrer4StudyZone"){
+                $Rolle_int = "100";
+            } else {
+                $Rolle_int = "1000";
+            }
+
+
             // Verifizieren der eindeutigen E-Mail
             $verify_query = mysqli_query($con, "SELECT EMail FROM Benutzer WHERE EMail='$email'");
 
@@ -35,7 +43,9 @@ session_start();
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
                 // Einfügen des neuen Benutzers mit dem gehashten Passwort
-                mysqli_query($con, "INSERT INTO Benutzer(`Name`, `EMail`, `Passwort`) VALUES('$name', '$email', '$hashed_password')") or die("Fehler aufgetreten");
+                mysqli_query($con, "INSERT INTO Benutzer(`Name`, `EMail`, `Passwort`) VALUES('$name', '$email', '$hashed_password')") or die("Fehler aufgetreten - Datenbank Benutzer");
+                mysqli_query($con, "INSERT INTO `Profile`(`Name`,`Rolle_int`, `EMail`) VALUES('$name', '$Rolle_int', '$email')") or die("Fehler aufgetreten - Datenbank Profile");
+                mysqli_query($con, "INSERT INTO Logins(`Passwort`, `EMail`) VALUES('$hashed_password', '$email')") or die("Fehler aufgetreten - Datenbank Logins");
 
                 echo "<div class='message'>
                           <p>Registrierung erfolgreich!</p>
@@ -60,6 +70,11 @@ session_start();
                 <div class="field input">
                     <label for="password">Passwort</label>
                     <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="kennung">Kennung</label>
+                    <input type="text" name="kennung" id="kennung" autocomplete="off">
                 </div>
 
                 <div class="field">
