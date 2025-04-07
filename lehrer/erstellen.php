@@ -27,9 +27,9 @@
         <div class="erstellen">
             <h1>Was möchten Sie erstellen? <br>Lehrer-Name</h1>
 
-            <button><a href="/aufgaben/multiple-aufgabe.php">Multiplechoice - Aufgaben</a></button>
-            <button><a href="/aufgaben/freie-aufgabe.html">Freie - Aufgaben</a></button>
-            <button><a href="/aufgaben/bild-aufgabe.html">Bild - Aufgaben</a></button>
+            <button><a href="/lehrer/aufgaben/multiple-aufgabe.php">Multiplechoice - Aufgaben</a></button>
+            <button><a href="/lehrer/aufgaben/freie-aufgabe.html">Freie - Aufgaben</a></button>
+            <button><a href="/lehrer/aufgaben/bild-aufgabe.html">Bild - Aufgaben</a></button>
         </div>
     </div>
 
