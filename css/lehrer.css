@@ -1,0 +1,90 @@
+body{
+    min-width: 400px;
+}
+
+.scoreboard{
+    background: #fdfdfd;
+    align-items: center;
+    justify-content: center;
+    padding: 5;
+    border-radius: 10px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
+    margin-top: 5px;
+    width: 100%;
+    display: table;
+}
+
+.scoreboard th, .scoreboard td{
+    padding: 10px;
+    text-align: center;
+}
+
+.fächer{
+    text-align: center;
+    justify-content: center;
+}
+
+.erstellen{
+    display: flex;
+    background: #fdfdfd;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0;
+    flex: 1;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.erstellen h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.erstellen-frage{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.erstellen-frage textarea{
+    flex: 1;
+    width: auto;
+    height: auto;
+    min-height: 100px;
+
+    margin-right: 50px;
+}
+
+.erstellen-möglichkeiten{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.erstellen-möglichkeiten div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.erstellen-möglichkeiten input[type="radio"]{
+    margin: 0;
+}
+
+.erstellen-möglichkeiten textarea{
+    flex: 1;
+}
+
+.profil{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0;
+    margin-top: 5px;
+}
