@@ -81,6 +81,9 @@
                     <textarea name="Frage" placeholder="Hier die Frage eingeben:" required></textarea>
                 </div>
 
+                <!-- Seite überarbeiten -->
+                <!--
+                
                 <div class="erstellen-möglichkeiten">
                     <h3>Antwort Möglichkeiten:</h3>
                     <div>
@@ -103,6 +106,7 @@
                     </div>
                 </div>
 
+                -->
                 <button name="submit" type="submit">Speichern</button>
 
                 <canvas id="canvas" width="800" height="600" style="border:1px solid #ccc; position:absolute; left:0; top:0; z-index:10;"></canvas>

@@ -75,10 +75,10 @@
                 <div class="field">
                     <input type="submit" class="btn" name="submit" value="Login" required>
                 </div>
-                <div class="links">
+                <!--<div class="links">
                     TODO: E-Mail schreiben für vergessen und Registrieren
                     Passwort vergessen? <a href="#">#</a>
-                </div>
+                </div> -->
                 <div class="links">
                     Noch keinen Account? <a href="../login/registrieren.php">Registrieren</a>
                 </div>
